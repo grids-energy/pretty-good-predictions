@@ -35,7 +35,7 @@ python training_set_creation.py
 
 ## What do all the columns mean?
 - **UNIXTIME:** Don't use this column as a feature, it just for reference, and the number of seconds since 1/1/1970.
-- **TEMP:** In celcius.
+- **TEMP:** In Celsius.
 - **HUMIDITY:** % Humidity represented as a decimal from 0 to 1.
 - **SPEED:** Wind speed m/s.
 - **DIRECTION:** Wind speed direction in degrees.

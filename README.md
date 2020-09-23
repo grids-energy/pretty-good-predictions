@@ -32,7 +32,7 @@ python training_set_creation.py
 ## What do all the columns mean?
 - **UNIXTIME:** Don't use this column as a feature, it just for reference, and the number of seconds since 1/1/1970.
 - **TEMP:** In celcius.
-- **HUMIDITY:** % Humdity represented as a decimal from 0 to 1.
+- **HUMIDITY:** % Humidity represented as a decimal from 0 to 1.
 - **SPEED:** Wind speed m/s.
 - **DIRECTION:** Wind speed direction in degrees.
 - **PERIODIDPREDICTED:** The PeriodID of the period it's predicting.
@@ -47,7 +47,7 @@ python training_set_creation.py
 - **MONTH:** From 1-12.
 - **CAPACITYRESERVE:** Does this look right:
   
-   ('AVAILABLEGENERATIONPREDICTED' - 'TOTALDEMANDPREDICTED' - 'NETINTERCHANGEPREDICTED')/'AVAILABLEGENERATIONPREDICTED'
+   (AVAILABLEGENERATIONPREDICTED - TOTALDEMANDPREDICTED - NETINTERCHANGEPREDICTED)/AVAILABLEGENERATIONPREDICTED
    
    I hope it's right. Capapacity Reserve % as a decimal from 0 to 1.
 
@@ -89,7 +89,7 @@ Try some other statical techniques too, especially if they have cool names like 
 
 If you are wanting to predict something like "Will the price be over $1000?" then you can change your RRPACTUAL column from the actual price, to a 1 if the price was over $1000, or 0 if the price was under $1000. This model will now predict a value between 0 and 1, which is roughly the proability of exceeding $1000. This, combined with the actual price prediction now gives you both the expected value, and describes the distribution of the possible values in a way that might be useful for you.
 
-## Where can I get weather data
+## Where can I get weather data?
 Lots of places, I like:
 
 Current Weather + Forecasts: [Willy Weather](https://www.willyweather.com.au/info/api.html) although it doesn't include cloud cover forecasts

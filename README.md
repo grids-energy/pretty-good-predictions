@@ -31,7 +31,7 @@ python training_set_creation.py
 
 ## What do all the columns mean?
 - **UNIXTIME:** Don't use this column as a feature, it just for reference, and the number of seconds since 1/1/1970.
-- **TEMP:"** In celcius.
+- **TEMP:** In celcius.
 - **HUMIDITY:** % Humdity represented as a decimal from 0 to 1.
 - **SPEED:** Wind speed m/s.
 - **DIRECTION:** Wind speed direction in degrees.
@@ -40,16 +40,22 @@ python training_set_creation.py
 - **RRPACTUAL:** What the price actually was in this period.
 - **RRPPREDICTED:** What pre-dispatch said the price would be in this period at the time of prediction (UNIXTIME).
 - **TOTALDEMANDPREDICTED:** Demand prediction in MW.
-- **AVAILABLEGENERATIONPREDICTED:** Generation prediction in MW.
+- **AVAILABLEGENERATIONPREDICTED:** Available generation prediction in MW.
 - **NETINTERCHANGEPREDICTED:** Net interconnector flows of the region.
-- **HORIZON:** Number of periods the actual period is away (0 means upcoming period, 1 mean 1 more period to go).
+- **HORIZON:** Number of periods the actual period is away (0 means this period starting now, 1 mean 1 more period to go).
 - **WORKDAY:** 1 if workday, 0 if weekend or between 24/12 and 1/1.
 - **MONTH:** From 1-12.
-- **CAPACITYRESERVE:** Does ('AVAILABLEGENERATIONPREDICTED' - 'TOTALDEMANDPREDICTED' - 'NETINTERCHANGEPREDICTED')/'AVAILABLEGENERATIONPREDICTED' look right? I hope it's right. Capapacity Reserve % as a decimal from 0 to 1.
+- **CAPACITYRESERVE:** Does this look right:
+  
+   ('AVAILABLEGENERATIONPREDICTED' - 'TOTALDEMANDPREDICTED' - 'NETINTERCHANGEPREDICTED')/'AVAILABLEGENERATIONPREDICTED'
+   
+   I hope it's right. Capapacity Reserve % as a decimal from 0 to 1.
+
+You can see how some of these derived values are calculated in `training_set_creation.py`
 
 ## Ok I have a training set now what do I do?
 
-If you don't know ML just throw these CSVs at something like [GCP AutoML Tables](https://cloud.google.com/automl-tables) and let it do the work. More features is not always better, I've found just using these features it pretty effective:
+If you don't know ML either learn some ML or just throw these CSVs at something like [GCP AutoML Tables](https://cloud.google.com/automl-tables) and let it do the work. More features is not always better, I've found just using these features it pretty effective:
 - TEMP
 - SPEED
 - PERIODIDPREDICTED
@@ -81,7 +87,7 @@ E.g. lets say the price predictions are QLD:$200, NSW:$100, VIC:$120, SA: $120 a
 
 Try some other statical techniques too, especially if they have cool names like "random forrest" and "sparse regression lasso".
 
-If you are wanting to predict something like "Will the price be over $1000" then you can change your RRPACTUAL column from the actual price, to a 1 if the price was over $1000, or 0 if the price was under $1000. This model will now predict a value between 0 and 1, which is the proability of exceeding $1000. This, combined with the actual price prediction now gives you both the expected value, and describes the distribution of the possible values in a way that might be useful for you.
+If you are wanting to predict something like "Will the price be over $1000?" then you can change your RRPACTUAL column from the actual price, to a 1 if the price was over $1000, or 0 if the price was under $1000. This model will now predict a value between 0 and 1, which is roughly the proability of exceeding $1000. This, combined with the actual price prediction now gives you both the expected value, and describes the distribution of the possible values in a way that might be useful for you.
 
 ## Where can I get weather data
 Lots of places, I like:
@@ -92,7 +98,7 @@ Historical: [Open Weather Map Bulk History](https://openweathermap.org/history-b
 
 Please submit a pull request and let us all know how we can predict energy prices better!
 
-Also if anyone has anything that would be useful for this repo: scripts, files, improvements to this README then please feel free to submit a pull request, or just fork it and take all the credit.
+Also if anyone has anything that would be useful for this repo: scripts, files, improvements to this README then please feel free to submit a pull request, or just fork it and take all the credit. And please do the same for any errors I have included.
 
 
 

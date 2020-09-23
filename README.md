@@ -91,7 +91,7 @@ E.g. lets say the price predictions are QLD:$200, NSW:$100, VIC:$120, SA: $120 a
 
 Try some other statical techniques too, especially if they have cool names like "random forrest" and "sparse regression lasso".
 
-If you are wanting to predict something like "Will the price be over $1000?" then you can change your RRPACTUAL column from the actual price, to a 1 if the price was over $1000, or 0 if the price was under $1000. This model will now predict a value between 0 and 1, which is roughly the proability of exceeding $1000. This, combined with the actual price prediction now gives you both the expected value, and describes the distribution of the possible values in a way that might be useful for you.
+If you are wanting to predict something like "Will the price be over $1000?" then you can change your RRPACTUAL column from the actual price, to a 1 if the price was over $1000, or 0 if the price was under $1000. This model will now predict a value between 0 and 1, which is roughly the probability of exceeding $1000. This, combined with the actual price prediction now gives you both the expected value, and describes the distribution of the possible values in a way that might be useful for you.
 
 ## Where can I get weather data?
 Lots of places, I like:

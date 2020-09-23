@@ -20,9 +20,13 @@ To stich them all together, open one of the files in excel, then copy that file,
 
 
 - Download python and pip 
-- make a virtual environment (optional)
+
 ```
-pip install requirements.txt
+git clone https://github.com/grids-energy/pretty-good-predictions
+
+cd pretty-good-predictions
+
+pip install -r requirements.txt
 
 python training_set_creation.py
 ```

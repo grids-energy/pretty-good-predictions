@@ -91,7 +91,9 @@ If you are wanting to predict something like "Will the price be over $1000?" the
 
 ## Where can I get weather data
 Lots of places, I like:
+
 Current Weather + Forecasts: [Willy Weather](https://www.willyweather.com.au/info/api.html) although it doesn't include cloud cover forecasts
+
 Historical: [Open Weather Map Bulk History](https://openweathermap.org/history-bulk) Flat fee of $10/location and goes back to 1979! Way before electricity was even invented.
 
 ## Your advice is dumb and my advice is better

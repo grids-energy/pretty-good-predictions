@@ -6,7 +6,7 @@ Here are some data sets with pre-dispatch data combined with the actual price, s
 
 This data goes from 2015 onwards.
 
-With one simple command the data will be ready to jam straight into a machine learning algorithm and get some pretty good wholesale price predictions for that Australian National Market!
+With one simple command the data will be ready to jam straight into a machine learning algorithm and get some pretty good wholesale price predictions for the Australian National Electricity Market!
 
 It doesn't include WA or TAS as capacity and monopoly markets aren't real markets. Also until WA changes the 'WEM' acronym from 'Wholesale Electricity Market' to something more approriate.... oh I don't know like 'WA Electricity Market' it doesn't exist as a state to me.
 

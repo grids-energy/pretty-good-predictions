@@ -81,7 +81,7 @@ You'll probably see when there's a high price the predictions fall within $500-$
 
 First, decide on what better means. If you're just trying to predict the price accurately, Mean Average Error is a pretty good KPI. If you're doing something like Demand Response and want to know if the price will be over/under $1000/MW, then use False Positive/Negative on Price >$1000 as your KPI.
 
-One thing that's cool is if there is headroom on the interconnectors, the prices between those states tend to be similar, and if the internconnector is a max then the prices are likely to diverge. This means that for regions that are predicted to have interconnector headroom, you can average those prices together and now you can say your model uses an "ensemble method".
+One thing that's cool is if there is headroom on the interconnectors, the prices between those states tend to be similar, and if the internconnector is at max then the prices are likely to diverge. This means that for regions that are predicted to have interconnector headroom, you can average those prices together and now you can say your model uses an "ensemble method".
 
 E.g. lets say the price predictions are QLD:$200, NSW:$100, VIC:$120, SA: $120 and the only interconnector constraint is at QLD-NSW, it's probably reasonable to make the prices QLD:$200, NSW:$113.3, VIC:$113.3, SA: $113.3
 

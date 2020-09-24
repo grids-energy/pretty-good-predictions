@@ -8,7 +8,9 @@ This data goes from 2015 onwards.
 
 With one simple command the data will be ready to jam straight into a machine learning algorithm and get some pretty good wholesale price predictions for the Australian National Electricity Market!
 
-It doesn't include WA or TAS as capacity markets are boring and monopoly markets aren't real markets. Also until WA changes the 'WEM' acronym from 'Wholesale Electricity Market' to something more approriate.... oh I don't know like 'WA Electricity Market' then selective boycotts seem appropriate.
+It doesn't include WA or TAS as capacity markets are boring and monopoly markets aren't real markets. Also until WA changes the 'WEM' acronym from 'Wholesale Electricity Market' to something more approriate.... oh I don't know like 'WA Electricity Market' then selective boycotts seem appropriate[1].
+
+[1] As I have jokingly criticised the WEM I now need to praise it. You capacity markets create very stable prices and your SRAS cost allocation methods are very elegant and I wish one day the NEM also had these kind of properties.
 
 ## How to create the training set
 

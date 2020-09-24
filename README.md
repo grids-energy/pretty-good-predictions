@@ -8,7 +8,7 @@ This data goes from 2015 onwards.
 
 With one simple command the data will be ready to jam straight into a machine learning algorithm and get some pretty good wholesale price predictions for the Australian National Electricity Market!
 
-It doesn't include WA or TAS as capacity and monopoly markets aren't real markets. Also until WA changes the 'WEM' acronym from 'Wholesale Electricity Market' to something more approriate.... oh I don't know like 'WA Electricity Market' it doesn't exist as a state to me.
+It doesn't include WA or TAS as capacity markets are boring and monopoly markets aren't real markets. Also until WA changes the 'WEM' acronym from 'Wholesale Electricity Market' to something more approriate.... oh I don't know like 'WA Electricity Market' then selective boycotts seem appropriate.
 
 ## How to create the training set
 
@@ -53,7 +53,7 @@ python training_set_creation.py
   
    (AVAILABLEGENERATIONPREDICTED - TOTALDEMANDPREDICTED - NETINTERCHANGEPREDICTED)/AVAILABLEGENERATIONPREDICTED
    
-   I hope it's right. Capapacity Reserve % as a decimal from 0 to 1.
+   I hope it's right. Capacity Reserve % as a decimal from 0 to 1.
 
 You can see how some of these derived values are calculated in `training_set_creation.py`
 
@@ -105,7 +105,3 @@ Historical: [Open Weather Map Bulk History](https://openweathermap.org/history-b
 Please submit a pull request and let us all know how we can predict energy prices better!
 
 Also if anyone has anything that would be useful for this repo: scripts, files, improvements to this README then please feel free to submit a pull request, or just fork it and take all the credit. And please do the same for any errors I have included.
-
-
-
-

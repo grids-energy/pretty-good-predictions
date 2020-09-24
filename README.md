@@ -102,7 +102,7 @@ Current Weather + Forecasts: [Willy Weather](https://www.willyweather.com.au/inf
 
 Historical: [Open Weather Map Bulk History](https://openweathermap.org/history-bulk) Flat fee of $10/location and goes back to 1979! Way before electricity was even invented.
 
-Surprisingly enough the [Norweigan Weather Service](https://www.yr.no/?spr=eng) has some great and accesible data. [Example](https://www.yr.no/place/Australia/Queensland/Brisbane/hour_by_hour_detailed.html).
+Surprisingly enough the [Norweigan Meteorological Institute](https://www.yr.no/?spr=eng) has some great and accesible data. [Example](https://www.yr.no/place/Australia/Queensland/Brisbane/hour_by_hour_detailed.html).
 
 ## "Your advice is bad and my advice is better!"
 

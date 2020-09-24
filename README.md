@@ -102,7 +102,7 @@ Current Weather + Forecasts: [Willy Weather](https://www.willyweather.com.au/inf
 
 Historical: [Open Weather Map Bulk History](https://openweathermap.org/history-bulk) Flat fee of $10/location and goes back to 1979! Way before electricity was even invented.
 
-## Your advice is dumb and my advice is better
+## "Your advice is bad and my advice is better!"
 
 Please submit a pull request and let us all know how we can predict energy prices better!
 
